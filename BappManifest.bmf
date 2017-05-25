@@ -1,0 +1,12 @@
+Uuid: 554059e593ce446585574b92344b9675
+ExtensionType: 1
+Name: PsychoPATH
+RepoName: psycho-path
+ScreenVersion: 1.0
+SerialVersion: 0
+MinPlatformVersion: 0
+ProOnly: False
+Author: Julian Horoszkiewicz, Pentest Ltd.
+ShortDescription: A customizable payload generator, to automate blind detection of web file upload implementations allowing to write files into the webroot (aka document root). Also very handy in hunting Local File Inclusion aka arbitrary file reading issues involving path traversal.
+EntryPoint: build/libs/psycho-path-all.jar
+BuildCommand: gradle fatJar

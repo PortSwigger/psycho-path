@@ -1,0 +1,12 @@
+<p>A customizable payload generator, initially designed to automate blind detection of web file upload implementations allowing to write files into the webroot (aka document root). The "blind" aspect is the key here and is inherent to dynamic testing usually conducted with no access to the source code or the filesystem.</p>
+
+<p>Shortly after implementation it turned out the tool can also be very handy in hunting Local File Inclusion aka arbitrary file reading issues involving path traversal.</p>
+
+<p>This tool helps to discover several kinds of vulnerabilities not detected by most scanners/payload sets:</p>
+
+<ul>
+  <li>file upload vulnerable to path traversal with the upload directory located inside the document root</li>
+  <li>file upload vulnerable to path traversal with the upload directory outside the document root</li>
+  <li>file upload not vulnerable to path traversal, but having the upload directory is inside of the document root, with no direct links to the uploaded file exposed by the application</li>
+  <li>local file inclusion/arbitrary file read vulnerable to path traversal with non-recurrent filters involved</li>
+</ul>
