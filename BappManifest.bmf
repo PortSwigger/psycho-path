@@ -7,6 +7,6 @@ SerialVersion: 0
 MinPlatformVersion: 0
 ProOnly: False
 Author: Julian Horoszkiewicz, Pentest Ltd.
-ShortDescription: A customizable payload generator, to automate blind detection of web file upload implementations allowing to write files into the webroot (aka document root). Also very handy in hunting Local File Inclusion aka arbitrary file reading issues involving path traversal.
+ShortDescription: A customizable payload generator suitable for detecting a variety of file path vulnerabilities.
 EntryPoint: build/libs/psycho-path-all.jar
 BuildCommand: gradle fatJar
