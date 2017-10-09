@@ -6,7 +6,7 @@ ScreenVersion: 1.0
 SerialVersion: 1
 MinPlatformVersion: 0
 ProOnly: False
-Author: Julian Horoszkiewicz, Pentest Ltd.
+Author: Julian Horoszkiewicz, Secarma Ltd.
 ShortDescription: A customizable payload generator suitable for detecting a variety of file path vulnerabilities.
 EntryPoint: build/libs/psycho-path-all.jar
 BuildCommand: gradle fatJar
