@@ -20,9 +20,13 @@ public class BurpExtender implements IBurpExtender, IExtensionStateListener {
         callbacks.registerExtensionStateListener(this);
         
         // now we register two intruder extension factories; one for the traversed filename, one for the payload marker
+        callbacks.registerIntruderPayloadGeneratorFactory(new PayloadFactory(PsychoPATH.PsychoTab, "byte"));
+        callbacks.registerIntruderPayloadGeneratorFactory(new PayloadFactory(PsychoPATH.PsychoTab, "check"));
         callbacks.registerIntruderPayloadGeneratorFactory(new PayloadFactory(PsychoPATH.PsychoTab, "path"));
         callbacks.registerIntruderPayloadGeneratorFactory(new PayloadFactory(PsychoPATH.PsychoTab, "mark"));
-        callbacks.registerIntruderPayloadGeneratorFactory(new PayloadFactory(PsychoPATH.PsychoTab, "check"));
+        
+        callbacks.registerScannerCheck(new DirectScannerCheck(callbacks,PsychoPATH.PsychoTab));
+        
         callbacks.registerContextMenuFactory(new Menu(callbacks));
     }
 
