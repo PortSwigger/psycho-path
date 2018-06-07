@@ -3,9 +3,9 @@ ExtensionType: 1
 Name: PsychoPATH
 RepoName: psycho-path
 ScreenVersion: 1.1
-SerialVersion: 3
+SerialVersion: 4
 MinPlatformVersion: 0
-ProOnly: True
+ProOnly: False
 Author: Julian Horoszkiewicz, Pentest Ltd.
 ShortDescription: A customizable payload generator suitable for detecting a variety of file path vulnerabilities.
 EntryPoint: build/libs/psycho-path-all.jar
